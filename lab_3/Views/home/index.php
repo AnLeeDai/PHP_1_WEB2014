@@ -9,13 +9,13 @@
             ?>
 
             <div class="product-item">
-                <a href="product-detail.php?id=<?php echo $i; ?>">
+                <a>
                     <img src="assets/images/iPhone-16.jpg" - <?php echo $i + 1; ?>.png" alt="Sản
                     phẩm <?php echo $i + 1; ?>">
                 </a>
 
-                <a href="product-detail.php?id=<?php echo $i; ?>">
-                    <h2>Sản phẩm <?php echo $i + 1; ?> - Tên sản phẩm</h2>
+                <a>
+                    <h2 style="font-size: 25px">Sản phẩm <?php echo $i + 1; ?> - Tên sản phẩm</h2>
                 </a>
 
                 <div class="describe">

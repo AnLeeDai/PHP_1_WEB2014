@@ -19,6 +19,8 @@ header {
     background-color: #f0f0f0;
     padding: 15px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
 }
 
 header .container {
@@ -120,13 +122,12 @@ footer h2 {
 .product-item h2 {
     font-size: 1.25rem;
     margin-bottom: 10px;
-    color: #007bff;
 }
 
 .describe {
     font-size: 0.9rem;
     color: #666;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .price {
