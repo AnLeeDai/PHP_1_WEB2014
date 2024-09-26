@@ -17,9 +17,16 @@ class NewsModel
     public function getAllNews()
     {
         $this->db->connect();
-        $stmt = $this->db->connection->prepare("SELECT * FROM baiviet");
+        $stmt = $this->db->connection->prepare(
+            "
+        SELECT baiviet.*, hinhanh.DuongDanHinh
+        FROM baiviet
+        LEFT JOIN hinhanh ON baiviet.HinhAnhID = hinhanh.HinhAnhID
+    "
+        );
 
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
 }

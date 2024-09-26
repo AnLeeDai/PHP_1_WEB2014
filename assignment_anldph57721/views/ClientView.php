@@ -22,7 +22,7 @@ function timeAgo($datetime)
 
 function renderNewsCard($news, $isFeatured = false)
 {
-    $image = !empty($news['HinhAnh']) ? htmlspecialchars($news['DuongDanHinh']) : 'https://i.pravatar.cc/1';
+    $image = !empty($news['DuongDanHinh']) ? $news['DuongDanHinh'] : 'https://i.pravatar.cc/1';
     $title = htmlspecialchars($news['TieuDe']);
     $source = htmlspecialchars($news['Nguon']);
     $time = timeAgo($news['ThoiGianTao']);
@@ -91,7 +91,6 @@ function renderNewsCard($news, $isFeatured = false)
         <div class="news-grid">
             <?php
             foreach (array_slice($newsList, 1) as $news):
-                // Render each news card
                 renderNewsCard($news);
             endforeach; ?>
         </div>
