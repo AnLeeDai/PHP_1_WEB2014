@@ -15,11 +15,11 @@
         <nav class="navbar navbar-expand-sm">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/index.php?page=home">Trang chủ</a>
+                    <a class="nav-link" href="/index.php?page=home">Trang chủ</a> <!-- Liên kết đến trang home -->
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" href="/index.php?page=admin">Trang quản lý (Admin)</a>
+                    <!-- Liên kết đến trang admin -->
                 </li>
             </ul>
         </nav>
