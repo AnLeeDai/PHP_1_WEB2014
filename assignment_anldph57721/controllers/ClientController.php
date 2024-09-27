@@ -12,13 +12,11 @@ class ClientController
 
     public function __construct()
     {
+        global $db_host, $db_name, $db_user, $db_pass;
+
+        include('config.php');
         require_once('models/Database.php');
         require_once('models/NewsModel.php');
-
-        $db_host = 'localhost';
-        $db_name = 'tin_tuc_schema';
-        $db_user = 'root';
-        $db_pass = '';
 
         $this->database = new Database($db_host, $db_name, $db_user, $db_pass);
 
